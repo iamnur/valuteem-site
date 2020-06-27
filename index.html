@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Valuteem</title>
+  </head>
+  <body>
+    <nav class="black">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">Valuteem Studio</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#whatwedo">About</a></li>
+          <li><a href="#pricing">Services</a></li>
+          <li><a href="#contactus">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#whatwedo">About</a></li>
+      <li><a href="#pricing">Services</a></li>
+      <li><a href="#contactus">Contact</a></li>
+    </ul>
+
+    <main class="main">
+      <div class="container">
+        <div class="body-top" id="presence">
+          <h2 class="white-text hoverable">
+            Build Your Presence
+          </h2>
+          <p class="text">
+            In today's world of connectivity your business needs a home online
+          </p>
+          <br />
+        </div>
+
+        <div class="aboutus" id="whatwedo"></div>
+        <div class="hide-on-large-only">
+          <hr />
+        </div>
+        <br />
+        <div class="card horizontal row">
+          <div class="card-image">
+            <img src="/img/valuteem.png" alt="Valuteem" />
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>
+                At Valuteem we help build your brand online and make the most
+                out of it.
+                <br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <!--
+            <div class="card-action">
+              <a href="#">About Us</a>
+            </div>
+            -->
+          </div>
+        </div>
+
+        <div id="pricing" class="body-bottom flow-text">
+          <h2 class="black-text hoverable">
+            WHAT WE DO & Pricing
+          </h2>
+          <hr />
+          <p>
+            At Valuteem we help build your brand online.
+            <br />
+
+            We provide the following services :-
+          </p>
+          <br />
+          <ul>
+            Web Design and Development.
+            <br />
+            Consultation on web technologies.
+          </ul>
+          <div>
+            <br />
+            <ul>
+              <li>
+                Basic one page site :- $100
+              </li>
+              <li>
+                Basic four page site :- $380
+              </li>
+              <li>
+                Basic specified page site :- $100/page
+              </li>
+              <li>
+                Blog CMS site(Wordpress) :- $1000
+              </li>
+              <li>
+                Basic CMS Ecommerce site :- $3000/page
+              </li>
+              <li>Others :- <a href="#contact">Contact Us </a></li>
+            </ul>
+          </div>
+          <h2 id="contactus" class="black-text hoverable">
+            Contact Us
+          </h2>
+          <hr />
+          <h6>
+            Our Mail > valuteem@gmail.com
+          </h6>
+          <p>
+            For more info
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+            cumque inventore reprehenderit totam dolores voluptatum? Nesciunt,
+            ratione repellat.
+          </p>
+          <div class="hide-on-small-only">
+            <h4>
+              Our business is about technologies , yes. But it's also about
+              operations and customer relationships
+            </h4>
+          </div>
+
+          <div>
+            <h2 class="black-text hoverable">
+              FAQs
+            </h2>
+            <hr />
+            <p>
+              Q - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellat, fugiat.
+              <br />
+              A - Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              quo voluptates vitae totam perferendis, odio corporis deleniti
+              neque est quas quaerat qui quam aliquam pariatur, nihil voluptas
+              nemo numquam fugiat nesciunt animi, minus eos?
+              <a href="#" class="waves-effect waves-teal btn-flat">READ MORE</a>
+            </p>
+          </div>
+
+          <div id="contact">
+            <h2 class="black-text hoverable">
+              Work with us
+            </h2>
+            <hr />
+            <div class="container">
+              <form action="action_page.php">
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Your name.."
+                />
+
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Your last name.."
+                />
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Write something.."
+                  style="height: 200px;"
+                ></textarea>
+
+                <!--  <input type="submit" value="Submit" />-->
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <!--FORM CODE FROM W3SCH00L-->
+
+        <form action="action_page.js">
+          <div class="container">
+            <h4 class="black-text hoverable">Subscribe to our Newsletter</h4>
+          </div>
+
+          <div class="container" style="background-color: white;">
+            <input type="text" placeholder="Name" name="name" required />
+            <input
+              type="text"
+              placeholder="Email address"
+              name="mail"
+              required
+            />
+            <label>
+              <input type="checkbox" checked="checked" name="subscribe" />
+              Montly Newsletter
+            </label>
+          </div>
+          <!--
+          <div class="container">
+            <input type="submit" value="Subscribe" />
+    
+          </div>
+    -->
+        </form>
+      </div>
+
+      <br />
+      <div class="container">
+        <div class="carousel">
+          <h3 class="black-text hoverable">
+            <em>Who We Work With</em>
+          </h3>
+
+          <a href="#one!" class="carousel-item">
+            <img style="width: 350px;" src="/img/fatimabakery.png" alt="" />
+          </a>
+          <a href="#two!" class="carousel-item"
+            ><img style="width: 350px;" src="/img/deezell.png" alt=""
+          /></a>
+
+          <a href="#three!" class="carousel-item"
+            ><img style="width: 350px;" src="/img/lamo.png" alt="" id="lamo"
+          /></a>
+
+          <a href="#four!" class="carousel-item"
+            ><img style="width: 350px;" src="/img/monguno.png" alt="" id="lamo"
+          /></a>
+        </div>
+      </div>
+      <!--container-->
+      <div style="height: 10px;"></div>
+    </main>
+
+    <footer class="page-footer black">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <a href="index.html"><h5 class="white-text">Valuteem Studio</h5></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 Copyright
+        </div>
+        <p>
+          YOU SHOULD ASSUME ALL SERVICES AS OF 2020 EARLY DONE BY DEVELOPERS AT
+          VALUTEEM ARE AMATEURS AND SERVICES ARE CHEAPER THAN OTHER COMPANIES
+          BUT SERVICES PROVIDED ARE DECENT FOR SMALL BUSINESSES AS WE ONLY WORK
+          WITH NEW BRANDS WITH LOW BUDGET ONLY.
+        </p>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https:code.jquery.com/jquery-2.1.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").carousel();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>
