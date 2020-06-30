@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -38,10 +42,26 @@
 
     <main class="main">
       <div class="container">
+        <!--  TAP TARGET -->
+        <div class="fixed-action-btn"  style="bottom: 45px;right:24px; ">
+
+          <a id="menu" onclick="$('.tap-target').tapTarget('open')" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
+
+          <!-- Tap Target Structure -->
+          <div class="tap-target " data-target="menu"">
+            <div class="tap-target-content ">
+              <h5>Contact Info</h5>
+              <p>Mail > Valuteem@gmail.com</p>
+              <p>Phone > (+234) 70-3383-7809</p>
+            </div>
+          </div>
+        </div>
+  
         <h6>
           <span>*Not Taking Clients Yet</span>, feel free to connect though or
           surf through
         </h6>
+
         <div class="body-top" id="presence">
           <h2 class="white-text hoverable">
             Build Your Presence
@@ -139,49 +159,111 @@
             </h2>
             <hr />
             <p>
-              Q - Why do businesses need an online presence?
+
+              <!-- Modal Trigger -->
+              <a
+                class="waves-effect waves-light btn modal-trigger"
+                href="#modal1"
+                >Q - Why do businesses need an online presence......?</a
+              >
+
               <br />
-              A - A strong online presence allows you to build your brand and
-              gain the credibility that you need to attract more customers.
-              Along with making <em>your business</em> readily accesible,
-              <em>online presence</em> also gives your customers an easy way to
-              find out more about what you offer.
-              <a href="#" class="waves-effect waves-teal btn-flat">READ MORE</a>
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                <h4>Answer</h4>
+                 - A strong online presence allows you to build your brand and
+                  gain the credibility that you need to attract more customers.
+                  Along with making <em>your business</em> readily accesible,
+                  <em>online presence</em> also gives your customers an easy way to
+                  find out more about what you offer.
+                      
+                 </div>
+                 <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                 </div>
+              </div>
             </p>
+            <br>
             <p>
-              Q - What are the benfits of an online presence?
+
+              <a
+              class="waves-effect waves-light btn modal-trigger"
+              href="#modal2"
+              >Q - What are the benefits of an online presence...?  </a
+             > 
               <br />
-              A -1- HELP your customers find you. "71% of B2B reseachers start
-              their research with a generic search"
+              <div id="modal2" class="modal">
+              <div class="modal-content">
+              <h4>Answer</h4>
+                HELP your customers find you. "71% of B2B reseachers start
+               their research with a generic search"
               <br />
-              2- Reach more people
+                Reach more people
               <br />
-              3- Build stronger brand <br />
-              4- Increase your credibility <br />
-              5- Repuatation management <br />
-              6- Cost efficient marketing
+               Build stronger brand <br />
+               Increase your credibility <br />
+               Repuatation management <br />
+               Cost efficient marketing
+
+               </div>
+               <div class="modal-footer">
+               <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+              </div>  
             </p>
+            <br>
             <p>
-              Q - What does it mean to have an online presence?
+
+              <a
+              class="waves-effect waves-light btn modal-trigger"
+              href="#modal3"
+              > Q - What does it mean to have an online presence?</a
+              >
+             
               <br />
-              A -An online presence is any existence of an individual or
-              business that can be found via an online search. An example of an
-              individual who is not active on the Internet but who has a online
-              presence is one who is a member of an association that has a
-              member directory listing online.
+              <div id="modal3" class="modal">
+                <div class="modal-content">
+                <h4>Answer</h4>
+                An online presence is any existence of an individual or
+                business that can be found via an online search. An example of an
+                individual who is not active on the Internet but who has a online
+                presence is one who is a member of an association that has a
+                member directory listing online.        
+               </div>
+               <div class="modal-footer">
+               <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+               </div>
+              </div>
+              
             </p>
+            <br>
             <p>
-              Q- How do I get an online presence for my business? <br />
-              A - Build an email list <br />
-              Master SEO <br />
-              Create value <br />
-              Be active online <br />
-              Analyze your results <br />
-              Adopt new forums <br />
-              Have a social media presence <br />
-              Make a website.
-            </p>
-          </div>
+              <a
+              class="waves-effect waves-light btn modal-trigger"
+              href="#modal4"
+              > Q- How do I get an online presence for my business? </a
+              >
+              <br />
+              <div id="modal4" class="modal">
+              <div class="modal-content">
+              <h4>Answer</h4>
+                Build an email list <br />
+                Master SEO <br />
+                Create value <br />
+                Be active online <br />
+                Analyze your results <br />
+                Adopt new forums <br />
+                Have a social media presence <br />
+                Make a website.
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+             </div>
+            
+           </p>
+           </div>
 
           <div id="contact">
             <h2 class="black-text hoverable">
@@ -208,13 +290,17 @@
                   </select>
                 </p>
                 <p>
-                  <button type="submit">Send</button>
+                  <button type="submit">
+                    <!--NOT SURE IF IT'LL WORK-->
+                    <a onclick="M.toast({html: 'Message Sent'})"></a>
+                    Send
+                  </button>
                 </p>
               </form>
             </div>
           </div>
         </div>
-
+        
         <hr />
 
         <!--FORM CODE FROM W3SCH00L-->
@@ -248,9 +334,8 @@
       <div class="container">
         <div class="carousel">
           <h3 class="black-text hoverable">
-            <em>Who We Work With</em>
+            Brands We Work With
           </h3>
-
           <a href="#one!" class="carousel-item">
             <img style="width: 350px;" src="/img/fatimabakery.png" alt="" />
           </a>
@@ -265,6 +350,30 @@
           <a href="#four!" class="carousel-item"
             ><img style="width: 350px;" src="/img/monguno.png" alt="" id="lamo"
           /></a>
+        </div>
+        <br />
+        <hr />
+
+        <h2>
+          Our Work
+        </h2>
+
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img class="materialboxed" width="650" src="/img/lmo.png">
+            </li>
+
+            <li>
+              <img class="materialboxed" width="650" src="/img/LMO Offficial.png">
+            </li>
+            <li>
+              <img class="materialboxed" width="650" src="/img/MOUSE.png">
+            </li>
+            <li>
+              <img class="materialboxed" width="650" src="/img/vlogo red.png">
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -302,11 +411,37 @@
         $(".carousel").carousel();
       });
     </script>
+
     <script>
+      // Init sidenav
       $(document).ready(function () {
         $(".sidenav").sidenav();
       });
 
+      // activate slider
+      $(".slider").slider();
+
+      // fire off toast on reload
+      M.toast({ html: "Welcome!" });
+
+      // init material boxed
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+
+      // Init Modal
+      $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  // init taptarget
+  $(document).ready(function(){
+    $('.tap-target').tapTarget();
+  });
+
+
+
+      //smooth scroll effect
       $(document).ready(function () {
         // Add smooth scrolling to all links
         $("a").on("click", function (event) {
