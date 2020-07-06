@@ -26,6 +26,10 @@ main h2 {
   text-align: left;
   padding: 1.2rem;
 }
+
+img {
+  width: 100%;
+}
 body {
   display: flex;
   min-height: 100vh;
