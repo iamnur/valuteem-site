@@ -19,6 +19,7 @@
     <title>Valuteem</title>
   </head>
   <body>
+    <!--NAV -->
     <nav class="black">
       <div class="nav-wrapper">
         <a href="index.html" class="brand-logo">Valuteem Studio</a>
@@ -28,7 +29,8 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#whatwedo">About</a></li>
           <li><a href="#pricing">Services</a></li>
-          <li><a href="#contactus">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
         </ul>
       </div>
     </nav>
@@ -61,7 +63,7 @@
           <span>*Not Taking Clients Yet</span>, feel free to connect though or
           surf through
         </h6>
-
+<!--Intro-->
         <div class="body-top" id="presence">
           <h2 class="white-text hoverable">
             Build Your Presence
@@ -71,7 +73,7 @@
           </p>
           <br />
         </div>
-
+<!--CARD and What we do-->
         <div class="aboutus" id="whatwedo"></div>
         <div class="hide-on-large-only">
           <hr />
@@ -96,7 +98,7 @@
             -->
           </div>
         </div>
-
+<!--PRICING ND what we do-->
         <div id="pricing" class="body-bottom flow-text">
           <h2 class="black-text hoverable">
             WHAT WE DO & Pricing
@@ -135,24 +137,9 @@
               <li>Others :- <a href="#contact">Contact Us </a></li>
             </ul>
           </div>
-          <h2 id="contactus" class="black-text hoverable">
-            Contact Us
-          </h2>
-          <hr />
-          <h6>
-            Our Mail > valuteem@gmail.com
-          </h6>
-          <p>
-            Phone > (+234) 70-3383-7809
-          </p>
+        </div>
 
-          <div class="hide-on-small-only">
-            <h4>
-              Our business is about technologies , yes. But it's also about
-              operations and customer relationships
-            </h4>
-          </div>
-
+<!--FAQs-->
           <div>
             <h2 class="black-text hoverable">
               FAQs
@@ -265,72 +252,88 @@
            </p>
            </div>
 
-          <div id="contact">
-            <h2 class="black-text hoverable">
-              Work with us
-            </h2>
-            <hr />
-            <div class="container">
-              <form name="contact" method="POST" data-netlify="true">
-                <p>
-                  <label>Your Name: <input type="text" name="name" /></label>
-                </p>
-                <p>
-                  <label>Your Email: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                  <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
-                </p>
-                <p>
-                  <button type="submit">
-                    <!--NOT SURE IF IT'LL WORK-->
-                    <a onclick="M.toast({html: 'Message Sent'})"></a>
-                    Send
-                  </button>
-                </p>
-              </form>
+<!--FORMS SECTION-->
+           <section id="forms">
+    
+            <!--WORK WITH US FORM NETLIFY FORM-->
+            <div id="contact">
+              <h2 class="black-text hoverable">
+                Work with us
+              </h2>
+              <hr />
+              <div class="container">
+                <form name="contact" method="POST" data-netlify="true">
+                  <p>
+                    <label>Your Name: <input type="text" name="name" /></label>
+                  </p>
+                  <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                  </p>
+                  <p>
+                    <label>Message: <textarea name="message"></textarea></label>
+                  </p>
+                  <p>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                  </p>
+                  <p>
+                    <button type="submit">
+                      Send
+                    </button>
+                  </p>
+                </form>
+              </div>
             </div>
-          </div>
-        </div>
+            <div class="hide-on-small-only">
+              <h4>
+                Our business is about technologies , yes. But it's also about
+                operations and customer relationships
+              </h4>
+            </div>
+            <hr />
+
+         
+<!--FORM CODE FROM W3SCH00L-->
+
+          <form action="action_page.js">
+            <div class="container">
+              <h4 class="black-text hoverable">Subscribe to our Newsletter</h4>
+            </div>
+
+            <div class="container" style="background-color: white;">
+              <input type="text" placeholder="Name" name="name" required />
+              <input
+                type="text"
+                placeholder="Email address"
+                name="mail"
+                required
+              />
+              <label>
+                <input type="checkbox" checked="checked" name="subscribe" />
+                Montly Newsletter
+              </label>
+            </div>
+            <!--
+            <div class="container">
+              <input type="submit" value="Subscribe" />
+            </div>-->
+          </form>
+          </section>
+
+          
         
-        <hr />
+        
+       
 
-        <!--FORM CODE FROM W3SCH00L-->
-
-        <form action="action_page.js">
-          <div class="container">
-            <h4 class="black-text hoverable">Subscribe to our Newsletter</h4>
-          </div>
-
-          <div class="container" style="background-color: white;">
-            <input type="text" placeholder="Name" name="name" required />
-            <input
-              type="text"
-              placeholder="Email address"
-              name="mail"
-              required
-            />
-            <label>
-              <input type="checkbox" checked="checked" name="subscribe" />
-              Montly Newsletter
-            </label>
-          </div>
-          <!--
-          <div class="container">
-            <input type="submit" value="Subscribe" />
-          </div>-->
-        </form>
-      </div>
+      </div> <!--CONTAINER-->
 
       <br />
+<!--BRANDS WE WORK WITH-->
+
       <div class="container">
         <div class="carousel">
           <h3 class="black-text hoverable">
@@ -353,7 +356,8 @@
         </div>
         <br />
         <hr />
-
+        
+<!--OUR WORK-->
         <h2>
           Our Work
         </h2>
